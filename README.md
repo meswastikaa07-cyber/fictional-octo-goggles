@@ -1,1 +1,50 @@
-# fictional-octo-goggles
+# fictional-octo-goggles<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <div class="card" id="card">
+      <div class="heart-decor" aria-hidden="true">
+        <svg viewBox="0 0 512 512" class="big-heart" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#ff4d7e" d="M471.7 73.7c-52.6-52.3-137.9-51.9-190.2.8L256 99.9l-25.5-25.4c-52.3-52.7-137.6-53.1-190.2-.8-56 55.7-56 146.2 0 201.9l215.7 215.4a24 24 0 0 0 34 0l215.7-215.4c56-55.7 56-146.2 0-201.9z"/>
+        </svg>
+      </div>
+
+      <h1 class="title" id="title">Hey <span id="recipient">kuchupuchu baby</span> 💖</h1>
+      <p id="typewriter" class="message" aria-live="polite"></p>
+
+      <div class="buttons" id="mainButtons">
+        <button id="yesBtn" class="btn yes">Of course! 😊</button>
+        <button id="persuadeBtn" class="btn maybe">I need more convincing 🤔</button>
+        <button id="jokeBtn" class="btn fun">Make me laugh 🤡</button>
+        <button id="complimentBtn" class="btn sparkle">Compliment (Too Extra) ✨</button>
+        <button id="danceBtn" class="btn party">Dance party 🕺</button>
+      </div>
+
+      <p class="hint">Tip: customize the nickname via the address bar: ?name=YourName or click the title to change it live.</p>
+    </div>
+
+    <div id="hearts" class="hearts" aria-hidden="true"></div>
+  </main>
+
+  <div id="celebrate" class="celebrate" hidden>
+    <div class="celebrate-content">
+      <h2 id="celebrateTitle">YES!!! 🥳</h2>
+      <p id="celebrateMsg">You're officially my Valentine — prepare for excessive affection and bad jokes.</p>
+      <button id="resetBtn" class="btn">Share a kiss & reset 💋</button>
+    </div>
+  </div>
+
+  <template id="toastTpl">
+    <div class="toast"></div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
